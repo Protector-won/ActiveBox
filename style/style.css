@@ -3,6 +3,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: 6c7279;
+  -webkit-font-smoothing: antialiased;
 
   background-color: #fff;
 }
@@ -95,11 +96,57 @@ p {
   background: #313550 url("img/intro-bg.jpg") no-repeat center / cover;
 }
 
+.intro__inner {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .intro__title {
+  margin: 0 0 30px;
+
   font-family: "Open Sans", sans-serif;
   font-size: 65px;
+  line-height: 1.1;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
+}
+
+.intro__subtitle {
+  margin-bottom: 60px;
+  font-size: 22px;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/*button
+====================================================*/
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 14px 40px;
+
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  vtransition: background 0.1s linear;
+}
+
+.btn--red {
+  background-color: #e84545;
+}
+
+.btn--red:hover {
+  background-color: #dd3434;
 }
