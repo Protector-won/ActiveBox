@@ -205,7 +205,7 @@ p {
   overflow: hidden;
 }
 
-works__item:hover .works__content {
+.works__item:hover .works__content {
   opacity: 1;
 }
 
