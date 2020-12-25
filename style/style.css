@@ -140,6 +140,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 
   transition: background 0.1s linear;
 }
@@ -150,6 +151,10 @@ p {
 
 .btn--red:hover {
   background-color: #dd3434;
+}
+
+.btn--long {
+  min-width: 280px;
 }
 
 /*features
@@ -306,6 +311,10 @@ p {
   display: flex;
 }
 
+.social--footer {
+  justify-content: center;
+}
+
 .social__item {
   display: flex;
   justify-content: center;
@@ -328,6 +337,17 @@ p {
   fill: #e84545;
 }
 
+.social--footer .social__item {
+  background-color: transparent;
+  border-width: 2px;
+  border-color: #fff;
+  border-radius: 2px;
+}
+
+.social--footer .social__item:hover {
+  background-color: #fff;
+}
+
 .social__icon {
   display: block;
   height: 18px;
@@ -335,6 +355,10 @@ p {
   fill: #c6cacc;
 
   transition: fill .1s linear;
+}
+
+.social--footer .social__icon {
+  fill: #fff;
 }
 
 /*reviews
@@ -385,5 +409,91 @@ p {
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #fff;
+}
+
+/*download
+====================================================*/
+.download {
+  margin: 90px 0;
+
+  text-align: center;
+}
+
+.download__title {
+  margin-bottom: 10px;
+
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300;
+}
+
+.download__text {
+  margin-bottom: 30px;
+
+  font-size: 13px;
+  color: #2d3033;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*footer
+====================================================*/
+.footer {
+  background-color: #3a3e64;
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px 0;
+}
+
+.footer__block {
+  width: 33.33333%;
+  padding: 0 15px;
+
+  text-align: center;
+}
+
+.footer__title {
+  margin-bottom: 10px;
+
+  font-style: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer__address {
+  font-style: 14px;
+  line-height: 1.5;
+  font-style: normal;
+  color: rgba(255, 255, 255, .5);
+}
+
+.footer__text {
+  font-style: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, .5);
+}
+
+
+/*copyright
+====================================================*/
+.copyright {
+  padding: 20px 0;
+
+  background-color: #313454;
+}
+
+.copyright__text {
+  text-align: center;
+  font-style: 14px;
+  color: #808080;
+  line-height: 1.5;
+}
+
+.copyright__text span {
   color: #fff;
 }
