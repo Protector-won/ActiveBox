@@ -49,6 +49,21 @@ p {
   z-index: 1000;
 }
 
+.header.fixed {
+  height: auto;
+
+  position: fixed;
+
+  background-color: #31344e;
+}
+
+.header.fixed .header__inner {
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border-bottom: 0;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -594,6 +609,19 @@ p {
   .social {
     justify-content: center;
   }
+
+   /* Reviews */
+  .reviews__photo {
+    width: 100%;
+    margin: 15px 0 40px;
+    overflow: hidden;
+ }
+
+ .reviews__content {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 40px;
+ }
 }
 
 @media (max-width: 767px) {
@@ -636,9 +664,52 @@ p {
   .team {
     margin: 60px 0 30px;
   }
+
   .team__item {
     width: 100%;
     
     text-align: center;
+  }
+
+  /* Reviews */
+  .reviews__text {
+    font-size: 25px;
+  }
+
+  /* Btn */
+  .btn--long {
+    min-width: 260px;
+  }
+
+  .download {
+    margin: 50px 0;
+  }
+
+  .download__title {
+    font-size: 24px;
+  }
+
+  /* Footer */
+
+  .footer__inner {
+    padding: 30px 0;
+  }
+
+  .footer__block {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer__block:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 414px) {
+  /* Reviews */
+  .reviews__img {
+    right: -100px;
   }
 }
